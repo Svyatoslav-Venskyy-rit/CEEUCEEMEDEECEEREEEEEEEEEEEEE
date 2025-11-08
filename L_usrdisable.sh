@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-LOGFILE="/var/log/irsec_user_remediation_$(date +%F_%H%M%S).log"
+LOGFILE="/var/log/CCDC_user_remediation_$(date +%F_%H%M%S).log"
 # Users listed in the IRSeC packet (Local + Domain Users you manage)
 # ADDED 'whiteteam' to the list to explicitly exclude it from review/deletion
 EXPECTED_USERS="root drwho martymcfly arthurdent sambeckett loki riphunter theflash tonystark drstrange bartallen merlin terminator mrpeabody jamescole docbrown professorparadox whiteteam blackteam grayteam dd-dog datadog"
