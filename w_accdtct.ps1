@@ -25,8 +25,8 @@ $logFile = "C:\CCDC_AccountCheck_$(Get-Date -Format 'yyyyMMdd_HHmmss').txt"
 
 # Whitelist (combined from references, case-insensitive)
 $whitelist = @{
-    "Domain" = @("fathertime", "chronos", "aion", "kairos")
-    "Local" = @("merlin", "terminator", "mrpeabody", "jamescole", "docbrown", "professorparadox", "drwho", "martymcFly", "arthurdent", "sambeckett", "loki", "riphunter", "theflash", "tonystark", "drstrange", "barta", "len")
+    "Domain" = @("fathertime", "chronos", "aion", "kairos", "datadog", "dd-dog", "whiteteam", "blackteam")
+    "Local" = @("merlin", "terminator", "mrpeabody", "jamescole", "docbrown", "professorparadox", "drwho", "martymcFly", "arthurdent", "sambeckett", "loki", "riphunter", "theflash", "tonystark", "drstrange", "barta", "len", "datadog", "dd-dog", "whiteteam", "blackteam")
 }
 $allWhitelist = ($whitelist["Domain"] + $whitelist["Local"]) | ForEach-Object { $_.ToLower() }
 
